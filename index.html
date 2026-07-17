@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مِجهر — منصة كشف التلاعب المالي</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     الواجهة التسويقية
+     ============================================================ -->
+<div class="view" data-view="home" id="view-home">
+
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <span class="lens-mark">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none">
+            <circle cx="12" cy="12" r="8.4" stroke="url(#lg1)" stroke-width="2.3"/>
+            <line x1="18" y1="18" x2="25.5" y2="25.5" stroke="url(#lg1)" stroke-width="2.6" stroke-linecap="round"/>
+            <defs><linearGradient id="lg1" x1="0" y1="0" x2="30" y2="30">
+              <stop stop-color="#F2B84B"/><stop offset="1" stop-color="#9C6E1F"/>
+            </linearGradient></defs>
+          </svg>
+        </span>
+        مِجهر
+      </div>
+      <nav class="site-nav">
+        <a href="#features">المزايا</a>
+        <a href="#how-it-works">كيف يعمل</a>
+      </nav>
+      <div class="header-cta">
+        <button class="header-theme-toggle js-theme-toggle" type="button" aria-label="تبديل الوضع الداكن/الفاتح"></button>
+        <button class="btn-primary btn-gold" data-enter-app="upload">ابدأ التحليل</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== Hero ===================== -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-anim">
+          <span class="eyebrow">تحليل مالي جنائي بالذكاء الاصطناعي</span>
+          <h1>ما تُخفيه الأرقام،<br><em>يكشفه مِجهر</em></h1>
+          <p class="lead">منصة تجمع نموذج بينيش الثماني وقانون بنفورد وذكاء اصطناعي يقرأ الإيضاحات، ليمنحك درجة خطر واحدة موثوقة على احتمال التلاعب في القوائم المالية.</p>
+          <div class="hero-ctas">
+            <button class="btn-primary btn-gold btn-lg" data-enter-app="upload">ابدأ التحليل الآن</button>
+            <a href="#how-it-works" class="btn-primary btn-ghost btn-lg">كيف يعمل؟</a>
+          </div>
+          <div class="hero-facts">
+            <div class="hero-fact"><b>٨</b><span>مؤشرات بينيش الثمانية</span></div>
+            <div class="hero-fact"><b>٣ طبقات</b><span>أرقام، نصوص، وأنماط إحصائية</span></div>
+            <div class="hero-fact"><b>0–100</b><span>درجة خطر واحدة موحّدة</span></div>
+          </div>
+        </div>
+
+        <div class="lens-visual reveal">
+          <div class="lens-glow"></div>
+          <div class="lens-orbit"></div>
+          <svg viewBox="0 0 440 440" width="100%" height="100%">
+            <defs>
+              <radialGradient id="lensFill" cx="35%" cy="28%" r="75%">
+                <stop offset="0%" stop-color="#1C2131"/><stop offset="100%" stop-color="#0A0C12"/>
+              </radialGradient>
+              <linearGradient id="lensRing" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#F2B84B"/><stop offset="100%" stop-color="#9C6E1F"/>
+              </linearGradient>
+              <clipPath id="lensClip"><circle cx="195" cy="185" r="148"/></clipPath>
+            </defs>
+            <line x1="302" y1="292" x2="392" y2="382" stroke="url(#lensRing)" stroke-width="24" stroke-linecap="round"/>
+            <circle cx="195" cy="185" r="150" fill="url(#lensFill)"/>
+            <g clip-path="url(#lensClip)">
+              <g stroke="rgba(245,246,250,.08)" stroke-width="1">
+                <line x1="47" y1="245" x2="343" y2="245"/>
+                <line x1="47" y1="185" x2="343" y2="185"/>
+                <line x1="47" y1="125" x2="343" y2="125"/>
+              </g>
+              <g fill="#F2B84B">
+                <rect x="66" y="170" width="17" height="105" rx="3" opacity=".95"/>
+                <rect x="93" y="200" width="17" height="75" rx="3" opacity=".8"/>
+                <rect x="120" y="215" width="17" height="60" rx="3" opacity=".65"/>
+                <rect x="147" y="230" width="17" height="45" rx="3" opacity=".55"/>
+                <rect x="174" y="238" width="17" height="37" rx="3" opacity=".45"/>
+                <rect x="201" y="245" width="17" height="30" rx="3" opacity=".38"/>
+                <rect x="228" y="250" width="17" height="25" rx="3" opacity=".32"/>
+                <rect x="255" y="253" width="17" height="22" rx="3" opacity=".28"/>
+                <rect x="282" y="256" width="17" height="19" rx="3" opacity=".24"/>
+              </g>
+              <polyline points="60,120 110,140 160,95 210,130 260,80 310,110" fill="none" stroke="#F5F6FA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity=".85"/>
+              <circle cx="260" cy="80" r="5.5" fill="#F87171"/>
+            </g>
+            <circle cx="195" cy="185" r="150" fill="none" stroke="url(#lensRing)" stroke-width="5"/>
+          </svg>
+          <div class="lens-chip c1">M-Score <b>−2.14</b></div>
+          <div class="lens-chip c2">بنفورد <b>مطابق</b></div>
+          <div class="lens-chip c3">خطر <b>18/100</b></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== شريط المنهجية ===================== -->
+    <section class="method-strip">
+      <div class="container">
+        <div class="method-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4.5 6v6c0 5 3.4 7.8 7.5 9 4.1-1.2 7.5-4 7.5-9V6L12 3Z"/><path d="m9 12 2 2 4-4"/></svg>
+          مبني على نموذج بينيش الأكاديمي
+        </div>
+        <div class="method-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v14M7 5h10M4 9l3-4 3 4M14 9l3-4 3 4"/><path d="M4 9a3 3 0 0 0 6 0M14 9a3 3 0 0 0 6 0"/><path d="M8 21h8"/></svg>
+          متوافق مع مفاهيم IFRS وSOCPA
+        </div>
+        <div class="method-item">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7" width="10" height="10" rx="1.5"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></svg>
+          تحليل نصي بالذكاء الاصطناعي (Gemini)
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== المزايا ===================== -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">المزايا</span>
+          <h2>ثلاث طبقات تحليل، درجة واحدة</h2>
+          <p>كل طبقة تكشف نوعًا مختلفًا من التلاعب — ومِجهر يدمجها في قرار واحد واضح.</p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card reveal reveal-1">
+            <div class="feature-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F2B84B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16a8 8 0 1 1 16 0"/><path d="M12 16 15.5 10"/><circle cx="12" cy="16" r="1.3" fill="#F2B84B" stroke="none"/></svg></div>
+            <h3>نموذج بينيش الثماني</h3>
+            <p>ثمانية مؤشرات مالية دقيقة تقارن سنتين متتاليتين لرصد أنماط تضخيم الأرباح، من نمو الذمم المشبوه إلى الاستحقاقات غير المدعومة بنقد.</p>
+            <div class="feature-meta">M-SCORE</div>
+          </div>
+          <div class="feature-card reveal reveal-2">
+            <div class="feature-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F2B84B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M9.5 20V4M15 20v-7M20 20v-4"/></svg></div>
+            <h3>قانون بنفورد</h3>
+            <p>يفحص توزيع الخانة الأولى عبر مئات الأرقام التفصيلية، ليكشف ما إذا كانت طبيعية أو مُفبركة إحصائيًا.</p>
+            <div class="feature-meta">٣٠٠+ رقم</div>
+          </div>
+          <div class="feature-card reveal reveal-3">
+            <div class="feature-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F2B84B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/><path d="M14 3v4h4"/><path d="M9 13h6M9 16.5h4"/></svg></div>
+            <h3>تحليل الإيضاحات بالذكاء الاصطناعي</h3>
+            <p>نموذج لغوي يقرأ الإيضاحات المالية ويصطاد الصياغات المراوغة، وتغيير السياسات المحاسبية، ومعاملات الأطراف ذات العلاقة.</p>
+            <div class="feature-meta">GEMINI</div>
+          </div>
+          <div class="feature-card reveal reveal-4">
+            <div class="feature-icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F2B84B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.3"/><circle cx="12" cy="12" r="4.8"/><circle cx="12" cy="12" r="1.4" fill="#F2B84B" stroke="none"/></svg></div>
+            <h3>الدرجة المركّبة</h3>
+            <p>يدمج مِجهر نتائج الطبقات الثلاث في درجة خطر واحدة من 100، بأوزان تتكيّف تلقائيًا حسب توفّر البيانات.</p>
+            <div class="feature-meta">0–100</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== كيف يعمل ===================== -->
+    <section class="section" id="how-it-works" style="padding-top:0">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">كيف يعمل</span>
+          <h2>من البيانات إلى القرار في ثلاث خطوات</h2>
+          <p>لا حاجة لإعداد معقّد أو تدريب مسبق.</p>
+        </div>
+        <div class="steps">
+          <div class="step-card reveal reveal-1">
+            <span class="step-num">01</span>
+            <h3>رفع البيانات</h3>
+            <p>أدخل الأرقام يدويًا أو ارفع ملف إكسل على القالب الموحّد، لخمس سنوات كحد أقصى.</p>
+            <span class="step-line"></span>
+          </div>
+          <div class="step-card reveal reveal-2">
+            <span class="step-num">02</span>
+            <h3>مِجهر يحلّل</h3>
+            <p>تعمل ثلاث طبقات تحليل بالتوازي: بينيش، بنفورد (اختياري)، وقراءة الإيضاحات النصية.</p>
+            <span class="step-line"></span>
+          </div>
+          <div class="step-card reveal reveal-3">
+            <span class="step-num">03</span>
+            <h3>الحصول على القرار</h3>
+            <p>درجة خطر واحدة مع شرح كل إشارة وأولويات المراجعة، جاهزة للمشاركة فورًا.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== شريط الدعوة للعمل ===================== -->
+    <section class="cta-band reveal">
+      <h2>حان وقت اكتشاف ما تُخفيه القوائم المالية</h2>
+      <p>أدخل بياناتك الآن واحصل على أول تحليل خلال دقائق — بدون إعداد معقّد.</p>
+      <div class="hero-ctas">
+        <button class="btn-primary btn-gold btn-lg" data-enter-app="upload">ابدأ مجانًا</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-brand">
+        <span class="lens-mark">
+          <svg width="22" height="22" viewBox="0 0 30 30" fill="none">
+            <circle cx="12" cy="12" r="8.4" stroke="#B7873A" stroke-width="2.3"/>
+            <line x1="18" y1="18" x2="25.5" y2="25.5" stroke="#B7873A" stroke-width="2.6" stroke-linecap="round"/>
+          </svg>
+        </span>
+        مِجهر
+      </div>
+      <p class="footer-note">مِجهر أداة استرشادية أوّلية ولا تُغني عن المراجعة البشرية أو التدقيق المهني. © 2026 جميع الحقوق محفوظة.</p>
+    </div>
+  </footer>
+</div>
+
+<!-- ============================================================
+     التطبيق — لوحة التحليل الداكنة
+     ============================================================ -->
+<div class="view" data-view="app" id="view-app" hidden>
+  <div class="app-shell">
+
+    <aside class="app-sidebar">
+      <div class="app-brand">
+        <span class="lens-mark">
+          <svg width="26" height="26" viewBox="0 0 30 30" fill="none">
+            <circle cx="12" cy="12" r="8.4" stroke="url(#lg2)" stroke-width="2.3"/>
+            <line x1="18" y1="18" x2="25.5" y2="25.5" stroke="url(#lg2)" stroke-width="2.6" stroke-linecap="round"/>
+            <defs><linearGradient id="lg2" x1="0" y1="0" x2="30" y2="30">
+              <stop stop-color="#F2B84B"/><stop offset="1" stop-color="#9C6E1F"/>
+            </linearGradient></defs>
+          </svg>
+        </span>
+        مِجهر
+      </div>
+
+      <nav class="app-nav">
+        <span class="app-nav-label">التحليل</span>
+        <button class="app-nav-link" data-page="dashboard">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="8" height="8" rx="1.5"/><rect x="13" y="3" width="8" height="8" rx="1.5"/><rect x="3" y="13" width="8" height="8" rx="1.5"/><rect x="13" y="13" width="8" height="8" rx="1.5"/></svg>
+          لوحة التحليل
+        </button>
+        <button class="app-nav-link" data-page="upload">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4.5 4.5 0 0 1-.5-8.98A5.5 5.5 0 0 1 17.3 8.5 4 4 0 0 1 17 18H7Z"/><path d="M12 12v6M9.5 14.5 12 12l2.5 2.5"/></svg>
+          رفع البيانات
+        </button>
+        <button class="app-nav-link" data-page="benford">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M9.5 20V4M15 20v-7M20 20v-4"/></svg>
+          تحليل بنفورد
+        </button>
+        <button class="app-nav-link" data-page="ai">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3h7l4 4v13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z"/><path d="M14 3v4h4"/><path d="M9 13h6M9 16.5h4"/></svg>
+          تحليل الإيضاحات
+        </button>
+      </nav>
+
+      <button class="app-theme-toggle js-theme-toggle" id="theme-toggle" type="button">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg> الوضع الداكن
+      </button>
+
+      <button class="app-back-home">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l-6 6 6 6M4 12h16"/></svg>
+        الرئيسية
+      </button>
+    </aside>
+
+    <div class="app-main">
+      <header class="app-topbar">
+        <div class="app-topbar-title" id="app-page-title">رفع البيانات</div>
+        <div class="app-topbar-meta">مِجهر · نسخة تجريبية</div>
+      </header>
+
+      <!-- ============ لوحة التحليل (Dashboard) ============ -->
+      <section class="app-page" data-page="dashboard" id="page-dashboard" hidden>
+        <div class="mj-eyebrow">لوحة التحليل</div>
+        <h2 class="mj-page-title">نظرة شاملة على المخاطر</h2>
+        <p class="mj-page-sub">كل النتائج — من الدرجة المركّبة إلى الإشارات الحمراء — في مكان واحد، بمجرد تشغيل الفحص.</p>
+
+        <div id="mejhar-results">
+          <div class="mj-empty">
+            <div class="mj-empty-icon">
+              <svg viewBox="0 0 30 30" fill="none"><circle cx="12" cy="12" r="8.4" stroke="#B7873A" stroke-width="2.3"/><line x1="18" y1="18" x2="25.5" y2="25.5" stroke="#B7873A" stroke-width="2.6" stroke-linecap="round"/></svg>
+            </div>
+            <h3>لوحة التحليل فارغة بعد</h3>
+            <p>ارفع بياناتك المالية من صفحة «رفع البيانات» ثم شغّل الفحص لتظهر النتائج هنا مباشرة.</p>
+            <button class="btn-primary" data-goto="upload">الذهاب لرفع البيانات</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ رفع البيانات (Upload) ============ -->
+      <section class="app-page" data-page="upload" id="page-upload">
+        <div class="mj-eyebrow">البيانات</div>
+        <h2 class="mj-page-title">رفع البيانات المالية</h2>
+        <p class="mj-page-sub">اختر بيانات تجريبية جاهزة، ارفع ملف إكسل على القالب الموحّد، أو أدخل الأرقام يدويًا.</p>
+
+        <div class="mj-steps-strip">
+          <span class="mj-step-pill"><b>١</b> رفع البيانات</span>
+          <span class="mj-step-pill"><b>٢</b> مراجعة الجدول</span>
+          <span class="mj-step-pill"><b>٣</b> تشغيل الفحص</span>
+        </div>
+
+        <div id="upload-feedback"></div>
+
+        <div class="upload-grid">
+          <div class="mj-panel">
+            <div class="upload-box">
+              <div class="upload-icon-ring">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F2B84B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 18a4.5 4.5 0 0 1-.5-8.98A5.5 5.5 0 0 1 17.3 8.5 4 4 0 0 1 17 18H7Z"/><path d="M12 12v6M9.5 14.5 12 12l2.5 2.5"/></svg>
+              </div>
+              <div>
+                <p class="upload-text">اسحب ملف الإكسل هنا أو اضغط للاختيار</p>
+                <p class="upload-sub">xlsx · xls · csv</p>
+              </div>
+            </div>
+            <div class="upload-actions">
+              <button class="btn-primary btn-upload">تنزيل القالب</button>
+              <button class="btn-primary btn-reset">تفريغ الجدول</button>
+            </div>
+          </div>
+
+          <div class="mj-panel">
+            <div class="mj-field">
+              <label for="start-date">سنة البداية</label>
+              <input type="text" id="start-date" inputmode="numeric">
+            </div>
+            <div class="mj-field">
+              <label for="years-count">عدد السنوات</label>
+              <select id="years-count">
+                <option value="" disabled>اختر عدد السنوات</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <p class="mj-field-hint">لا يمكن تحليل أقل من سنتين.</p>
+            </div>
+            <div class="mj-field company-name-field">
+              <label for="company-name">اسم المنشأة</label>
+              <input type="text" id="company-name" placeholder="أدخل الاسم هنا">
+            </div>
+          </div>
+        </div>
+
+        <div class="data-table-wrapper">
+          <table class="financial-table">
+            <thead></thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ============ تحليل بنفورد ============ -->
+      <section class="app-page" data-page="benford" id="page-benford">
+        <div class="mj-eyebrow">اختياري · وزن 15٪</div>
+        <h2 class="mj-page-title">تحليل قانون بنفورد</h2>
+        <p class="mj-page-sub">يحتاج بنفورد بيانات تفصيلية (قيود، فواتير، معاملات — ٣٠٠+ رقم). الصق الأرقام هنا ليكشف مِجهر ما إذا كان توزيع خانتها الأولى طبيعيًا أو مُفبركًا.</p>
+
+        <div class="mj-panel analysis-controls">
+          <div class="data-input-field">
+            <textarea id="benford-data" placeholder="الصق الأرقام هنا... (رقم في كل سطر أو مفصولة بفواصل)"></textarea>
+          </div>
+          <button class="btn-primary btn-analyze">بدء الفحص</button>
+        </div>
+      </section>
+
+      <!-- ============ تحليل الإيضاحات ============ -->
+      <section class="app-page" data-page="ai" id="page-ai">
+        <div class="mj-eyebrow">الذكاء الاصطناعي</div>
+        <h2 class="mj-page-title">تحليل الإيضاحات</h2>
+        <p class="mj-page-sub">المعادلات تفحص الأرقام، لكن التلاعب يختبئ بالكلام أيضًا. الصق نص الإيضاحات المرفقة بالقوائم، وسيصطاد النموذج اللغوي الصياغات المراوغة وتغيير السياسات المحاسبية.</p>
+
+        <div class="mj-panel ai-analysis-box">
+          <div class="ai-input-field">
+            <textarea id="ai-data" placeholder="الصق الإيضاحات هنا..."></textarea>
+          </div>
+          <div class="ai-actions">
+            <button class="btn-primary btn-analyze-ai">بدء التحليل</button>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</div>
+
+<script src="Script/config.js"></script>
+<script src="Script/state.js"></script>
+<script src="Script/utils.js"></script>
+<script src="Script/ui.js"></script>
+<script src="Script/events.js"></script>
+<script src="Script/validation.js"></script>
+<script src="Script/data.js"></script>
+<script src="Script/beneish.js"></script>
+<script src="Script/benford.js"></script>
+<script src="Script/ai.js"></script>
+<script src="Script/charts.js"></script>
+<script src="Script/report.js"></script>
+<script src="Script/main.js"></script>
+</body>
+</html>
